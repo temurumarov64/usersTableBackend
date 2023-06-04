@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 4200;
+const port = process.env.PORT || 4200;
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
